@@ -45,4 +45,15 @@ userRouter.post('/contact',async (req,res)=>{
 
 
 
+// GET endpoint to indicate the route is working
+userRouter.get('/All', (req, res) => {
+    res.json({
+        status: true,
+        msg: 'Endpoint /All is working'
+    });
+});
+
+
+
+
 module.exports=userRouter;
